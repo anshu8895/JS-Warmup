@@ -4,8 +4,13 @@ let BMIbtn = document.getElementById('BMIbtn');
 let BMIinfo = document.getElementById('BMIinfo');
 
 BMIbtn.addEventListener('click', () => {
-    let w = weight.value;
-    let h = height.value;
+    let w = parseFloat(weight.value);
+    let h = parseFloat(height.value);
+
+    if (!w || !h || w <= 0 || h <= 0) {
+        BMIinfo.textContent = '⚠️ Please enter valid weight and height values.';
+        return;
+    }
 
     let BMI = w / (h * h);
     let result;
@@ -20,5 +25,5 @@ BMIbtn.addEventListener('click', () => {
         result = 'Obese';
     }
 
-    BMIinfo.innerHTML = `BMI Index is :${BMI} (${result})`;
+    BMIinfo.textContent = `BMI Index is :${BMI.toFixed(2)} (${result})`;
 });
