@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker V3</title>
+</head>
+
+<body style="background-color: rgb(179, 191, 213); font: 1em sans-serif;">
+    <h1>Health Tracker V3</h1>
+    <input type="text" id="foodInput" placeholder="Enter your food name">
+    <input type="number" id="calorieInput" placeholder="Enter calories">
+    <button id="addBtn">Add Entry</button>
+    <div>
+        <h2>Food Log</h2>
+        <div id="foodLog"></div>
+        <p id="totalCalories">Total Calories: 0 kcal</p>
+        <button id="clearAllBtn">Clear All Data</button>
+    </div>
+    <canvas id="calorieChart" width="400" height="200"></canvas>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="healthTrackerV3.js"></script>
+</body>
+
+</html>
