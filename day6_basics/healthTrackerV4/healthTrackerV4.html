@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker V4</title>
+</head>
+
+<body style="background-color: rgb(120, 147, 147);">
+    <h1> Health Tracker V4</h1>
+    <div class="input-section">
+        <input type="text" id="foodInput" placeholder="Enter food name">
+        <input type="number" id="calorieInput" placeholder="Enter calories">
+        <button id="addBtn">Add Entry</button>
+    </div>
+
+    <div id="foodLog"></div>
+    <p id="totalCalories">Total Calories: 0 kcal</p>
+    <button id="clearAllBtn">Clear All Data</button>
+
+    
+    <canvas id="calorieChart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
+    
